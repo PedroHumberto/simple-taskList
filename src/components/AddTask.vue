@@ -1,7 +1,6 @@
 <template>
     <div>
-        <input type="text" v-model="item">
-        <button @click="submitTask">Add Task</button>
+        
         <ul>
             <li v-for="task in tasks" :key="task.id">
                 {{ task }}
@@ -13,22 +12,19 @@
 
 <script>
 export default {
-    
+    props: {
+        tasks:{
+            required: true,
+            type: Array,
+            default: []
+        }
+    }, 
     
     data() {
         return {
-            tasks: [],
-            item: ''
         }
     },
-    methods: {
-        submitTask(){
-            if(this.item != ''){
-                this.tasks.push(this.item)
-            }
-            this.item = ''
-        }
-    },
+   
 
 }
 </script>
