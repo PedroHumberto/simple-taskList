@@ -50,7 +50,7 @@ export default {
         margin: 4px auto;
     }
     button{
-        margin-left: 30px;
+        margin-left: 5px;
     }
 </style>>
 
