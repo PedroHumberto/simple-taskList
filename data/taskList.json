@@ -1,0 +1,7 @@
+[
+    {"id": "0", "item": "Estudar Vue.Js", "status": false},
+    {"id": "1", "item": "Aprender Biblioteca Axios", "status": false},
+    {"id": "2", "item": "Criar um Componente", "status": true},
+    {"id": "3", "item": "Estudar Vue Rotas", "status": false},
+    {"id": "4", "item": "Ver o uso de $emit", "status": false}
+]
