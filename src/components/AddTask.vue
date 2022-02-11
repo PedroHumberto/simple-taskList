@@ -6,12 +6,12 @@
                     <div v-if="task.status == false">
                         <button @click="check(task)">Done</button>
                         {{ task.item }}
-                        
                     </div>
-                    <div v-else style="text-decoration: line-through">
+                    <div 
+                    v-else 
+                    style="text-decoration: line-through">
                         <button @click="open(task)">Open</button>
                         {{ task.item }}
-                        
                     </div>
                 </li>
             </ul>       

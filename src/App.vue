@@ -3,9 +3,13 @@
     <div class="subcontainer">
 
       <h1>Task List</h1>
-      <input type="text" v-model="item">
-      <div class="addbutton">
 
+      <input 
+      type="text" 
+      v-model="item" 
+      @keyup.enter="submitTask">
+
+      <div class="addbutton">
         <button @click="submitTask">Add Task</button>
       </div>
       <add-task :tasks="tasks"></add-task>
