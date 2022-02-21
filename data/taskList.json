@@ -1,4 +1,4 @@
-[
+[ 
     {"id": "0", "item": "Estudar Vue.Js", "status": false},
     {"id": "1", "item": "Aprender Biblioteca Axios", "status": false},
     {"id": "2", "item": "Criar um Componente", "status": true},

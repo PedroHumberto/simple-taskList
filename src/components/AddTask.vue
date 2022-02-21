@@ -5,6 +5,7 @@
                 <li v-for="task in tasks" :key="task.id">
                     <div v-if="task.status == false">
                         <button @click="check(task)">Done</button>
+                        <button @click="remove(task)">Delete</button>
                         {{ task.item }}
                     </div>
                     <div 
@@ -33,7 +34,11 @@ export default {
         },
         open(task){
             task.status = false
-        }
+        },
+        remove(task){
+            let removeTask = this.tasks.indexOf(task)
+            this.tasks.splice(removeTask,1)
+        },
     }
 }
 </script>

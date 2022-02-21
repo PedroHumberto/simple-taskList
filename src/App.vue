@@ -35,7 +35,8 @@ export default {
   created() {
     fetch('../data/taskList.json')
     .then(res => res.json())
-    .then(data => this.tasks = data)
+    .then(data => {
+          this.tasks = data})
   },
   methods: {
       submitTask(){
